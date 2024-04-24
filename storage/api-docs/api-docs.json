@@ -1,0 +1,110 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Documentación de la API",
+        "description": "Esta es la documentación de la API de mi proyecto.",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/": {
+            "get": {
+                "tags": [
+                    "Usuarios"
+                ],
+                "summary": "Mostrar formato JSON",
+                "operationId": "44035f2d650ed2bb755c6b54cee9154a",
+                "responses": {
+                    "200": {
+                        "description": "Respuesta exitosa",
+                        "content": {
+                            "application/json": {
+                                "schema": {},
+                                "example": {
+                                    "message": "este es el formato json"
+                                }
+                            }
+                        }
+                    },
+                    "default": {
+                        "description": "Error interno del servidor"
+                    }
+                }
+            }
+        },
+        "/companies": {
+            "get": {
+                "tags": [
+                    "Usuarios"
+                ],
+                "summary": "Mostrar empresas",
+                "operationId": "68634da0ca1ee6dcf93bebaa22adf622",
+                "responses": {
+                    "200": {
+                        "description": "Respuesta exitosa",
+                        "content": {
+                            "application/json": {
+                                "schema": {},
+                                "example": {
+                                    "message": "Empresas mostradas"
+                                }
+                            }
+                        }
+                    },
+                    "default": {
+                        "description": "Error interno del servidor"
+                    }
+                }
+            }
+        },
+        "/customer": {
+            "get": {
+                "tags": [
+                    "Usuarios"
+                ],
+                "summary": "Mostrar usuarios de los prestamos",
+                "operationId": "8f97f74d9f540cfe746beb1e24dbc57d",
+                "responses": {
+                    "200": {
+                        "description": "Respuesta exitosa",
+                        "content": {
+                            "application/json": {
+                                "schema": {},
+                                "example": {
+                                    "message": "Customer's mostrados"
+                                }
+                            }
+                        }
+                    },
+                    "default": {
+                        "description": "Error interno del servidor"
+                    }
+                }
+            }
+        },
+        "/loans": {
+            "get": {
+                "tags": [
+                    "Usuarios"
+                ],
+                "summary": "Mostrar prestamos",
+                "operationId": "dd4059d56c4f61fd15c10b54709159ce",
+                "responses": {
+                    "200": {
+                        "description": "Respuesta exitosa",
+                        "content": {
+                            "application/json": {
+                                "schema": {},
+                                "example": {
+                                    "message": "Prestamos mostrados"
+                                }
+                            }
+                        }
+                    },
+                    "default": {
+                        "description": "Error interno del servidor"
+                    }
+                }
+            }
+        }
+    }
+}
